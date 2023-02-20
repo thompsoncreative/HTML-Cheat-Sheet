@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>HTML & CSS Cheat Sheet</title>
+</head>
+<body>
+    <Header><h1>HTML and CSS Cheat Sheet</h1></Header>
+
+    <section><h2>Common HTML Tags</h2></section>
+    <table>
+        <thead>
+            <tr>
+                <td>Tag</td>
+                <td>Name</td>
+                <td>Description</td>
+            </tr>
+        </thead>
+
+        <tbody>
+            
+
+            <tr>
+                <td>&lt;html&gt;</td>
+                <td>HTML</td>
+                <td class="description">Represents the root (top-level element) of an HTML document, so it is also referred to as the root element. 
+                    All other elements must be descendants of this element.</td>
+            </tr>
+
+            <tr>
+                <td>&lt;head&gt;</td>
+                <td>Document Metadata</td>
+                <td class="description">Contains machine-readable information (metadata) about the document, 
+                    like its title, scripts, and style sheets.</td>
+            </tr>
+
+            <tr>
+                <td>&lt;title&gt;</td>
+                <td>Document Title</td>
+                <td class="description">Defines the document's title that is shown in a browser's title bar or a page's tab. 
+                    It only contains text; tags within the element are ignored.</td>
+            </tr>
+
+            <tr>
+                <td>&lt;body&gt;</td>
+                <td>Document Body</td>
+                <td class="description">Represents the content of an HTML document. There can be only one &lt;body&gt; element in a document.</td>
+            </tr>
+
+            <tr>
+                <td>&lt;footer&gt;</td>
+                <td>Footer</td>
+                <td class="description">Represents a footer for its nearest ancestor sectioning content or sectioning root element. 
+                    A &lt;footer&gt; typically contains information about the author of the section, 
+                    copyright data or links to related documents.</td>
+            </tr>
+
+            <tr>
+                <td>&lt;h1&gt;</td>
+                <td>Section Heading</td>
+                <td class="description">Represent six levels of section headings. 
+                    &lt;h1&gt; is the highest section level and &lt;h6&gt; is the lowest.</td>
+            </tr>
+
+            <tr>
+                <td>&lt;p&gt;</td>
+                <td>Paragraph</td>
+                <td class="description">Represents a paragraph. Paragraphs are usually represented in visual media as blocks of text
+                     separated from adjacent blocks by blank lines and/or first-line indentation,
+                      but HTML paragraphs can be any structural grouping of related content,
+                       such as images or form fields.</td>
+            </tr>
+
+            <tr>
+                <td>&lt;div&gt;</td>
+                <td>Content Division</td>
+                <td class="description">Generic container for flow content. It has no effect on the content or layout until styled
+                     in some way using CSS (e.g. styling is directly applied to it, 
+                     or some kind of layout model like Flexbox is applied to its parent element).</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <section><h2>Other HTML Tags</h2></section>
+
+        <table>
+            <thead>
+                <tr>
+                    <td>Tag</td>
+                    <td>Name</td>
+                    <td>Description</td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>&lt;figure&gt;</td>
+                    <td>Figure with optional caption</td>
+                    <td class="description">Represents self-contained content, potentially with an optional caption, 
+                        which is specified using the &lt;figcaption&gt; element. The figure, its caption, 
+                            and its contents are referenced as a single unit.</td>
+                </tr>
+
+                <tr>
+                    <td>&lt;fig-caption&gt;</td>
+                    <td>Figure Caption</td>
+                    <td class="description">Represents a caption or legend describing the rest of the contents 
+                        of its parent &lt;figure&gt; element.</td>
+                </tr>
+
+                <tr>
+                    <td>&lt;ol&gt;</td>
+                    <td>Ordered List</td>
+                    <td class="description">Represents an ordered list of items, typically rendered as a numbered list.</td>
+                </tr>
+
+                <tr>
+                    <td>&lt;ul&gt;</td>
+                    <td>Unordered List</td>
+                    <td class="description">Represents an unordered list of items, typically rendered as a bulleted list.</td>
+                </tr>
+
+                <tr>
+                    <td>&lt;li&gt;</td>
+                    <td>List Item</td>
+                    <td class="description">used to represent an item in a list. It must be contained in a parent element: 
+                        (&lt;ol&gt;), an unordered list (&lt;ul&gt;), or a menu (&lt;menu&gt;).</td>
+                </tr>
+            </tbody>
+
+        </table>
+       
+
+    <section><h2>Common CSS Selectors</h2></section>
+        <table>
+            <thead>
+                <tr>
+                    <td>Name</td>
+                    <td>Syntax</td>
+                    <td>Description</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Universal</td>
+                    <td>* { style properties }</td>
+                    <td class="description">The CSS universal selector (*) matches elements of any type.</td>
+                </tr>
+
+                <tr>
+                    <td>Type</td>
+                    <td>element { style properties }</td>
+                    <td class="description">The CSS type selector matches elements by node name. 
+                        In other words, it selects all elements of the given type within a document.
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Class</td>
+                    <td>.class_name { style properties }</td>
+                    <td class="description">The CSS class selector matches elements based on the contents of their class attribute.</td>
+                </tr>
+
+                <tr>
+                    <td>Id</td>
+                    <td>#id_value { style properties }</td>
+                    <td class="description">The CSS ID selector matches an element based on the value of the element's id attribute. 
+                        In order for the element to be selected, its id attribute must match exactly the value given in the selector.
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Attribute</td>
+                    <td>[attr]
+                        Represents elements with an attribute name of attr.</td>
+                    <td class="description">The CSS attribute selector matches elements based on the presence or value of a given attribute.</td>
+                </tr>
+            </tbody>
+        </table>
+
+</body>
+</html>
